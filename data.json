@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-16T15:35:00+01:00",
+  "lastUpdated": "2026-02-18T13:25:06+01:00",
   "agent": {
     "name": "Turtok",
     "status": "online",
@@ -125,6 +125,66 @@
       "created": "2026-02-16",
       "completed": null,
       "notes": "DEADLINE 26.02.2026! Unterlagen an Steuerberaterin Jahn via DATEV hochladen."
+    },
+    {
+      "id": 13,
+      "title": "Relaxa Social Media Posts planen",
+      "project": "Personalfix",
+      "status": "todo",
+      "priority": "high",
+      "created": "2026-02-17",
+      "completed": null,
+      "notes": "Posting-Plan und Themenliste für Relaxa vorbereiten."
+    },
+    {
+      "id": 14,
+      "title": "Follow-Up Angebot erstellen (nach BAFA 7k€ MVP)",
+      "project": "KI-Beratung",
+      "status": "todo",
+      "priority": "high",
+      "created": "2026-02-17",
+      "completed": null,
+      "notes": "Monatliche Fee-Struktur definieren: Landingpage/Website = niedrigere Fee, WebApp mit Weiterentwicklung/Betrieb = höhere Fee. Klares Pricing-Dokument + Angebotsvorlage erstellen."
+    },
+    {
+      "id": 15,
+      "title": "YOSOY Gutschein-Shop — Stripe Checkout + E-Mail finalisieren",
+      "project": "KI-Beratung",
+      "status": "todo",
+      "priority": "high",
+      "created": "2026-02-17",
+      "completed": null,
+      "notes": "Stripe Authorization vorhanden, API Keys verfügbar. TODO: Checkout-Flow (Gutschein wählen → Stripe Redirect → Zahlung → E-Mail mit Gutschein). Deadline: diese Woche."
+    },
+    {
+      "id": 16,
+      "title": "Social Media Agent aufsetzen (Captions, Thumbnails, Scheduling)",
+      "project": "Vibe Builders",
+      "status": "backlog",
+      "priority": "high",
+      "created": "2026-02-17",
+      "completed": null,
+      "notes": "Eigener Agent für: Captions/Beschreibungen generieren, Thumbnails erstellen, Multi-Platform Scheduling. Paul produziert Videos, Agent übernimmt Nachbearbeitung + Posting."
+    },
+    {
+      "id": 17,
+      "title": "Recruiting-Paket SaaS bauen (Bewerbungsseiten + Kunden-Login)",
+      "project": "KI-Beratung",
+      "status": "backlog",
+      "priority": "high",
+      "created": "2026-02-17",
+      "completed": null,
+      "notes": "Bestehende Perspective-Funnelseiten als Vorlage nachbauen + Kunden-Login (Bewerber verwalten, Jobs managen). Ziel: schnell skalierbar, ein System für viele Kunden. Target: März 2026."
+    },
+    {
+      "id": 18,
+      "title": "Podcast mit Christoph bearbeiten & hochladen",
+      "project": "Vibe Builders",
+      "status": "todo",
+      "priority": "critical",
+      "created": "2026-02-18",
+      "completed": null,
+      "notes": "KRITISCH. Geplant: 2026-02-19 15:00. Schritte: Schnitt/Export → Upload (YouTube/Spotify?) → Beschreibung/Title/Thumbnail → Veröffentlichung prüfen."
     }
   ],
   "projects": [
