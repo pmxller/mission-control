@@ -385,6 +385,7 @@
     <div class="tabs">
       <div class="tab active" data-view="kanban">Kanban</div>
       <div class="tab" data-view="list">Liste</div>
+      <div class="tab" data-view="eodlog">📋 EOD Log</div>
       <div style="flex:1"></div>
       <div class="tab filter-tab" data-filter="all" style="font-size:.75rem;padding:6px 14px;">Alle</div>
       <div class="tab filter-tab" data-filter="Dennis" style="font-size:.75rem;padding:6px 14px;">👤 Dennis</div>
@@ -417,6 +418,10 @@
 
     <div class="view" id="view-list">
       <div id="list-content"></div>
+    </div>
+
+    <div class="view" id="view-eodlog">
+      <div id="eodlog-content"></div>
     </div>
 
     <footer class="footer">
@@ -503,6 +508,40 @@
       return html;
     }
 
+    function renderEodLog(entries) {
+      if (!entries || entries.length === 0) {
+        return '<div style="padding:60px;text-align:center;color:var(--text-3);font-size:.95rem;">Noch keine EOD-Einträge vorhanden.</div>';
+      }
+      return [...entries].reverse().map(entry => `
+        <div class="glass" style="margin-bottom:20px;padding:28px 32px;">
+          <div style="font-size:1.05rem;font-weight:700;color:var(--accent);margin-bottom:20px;display:flex;align-items:center;gap:10px;letter-spacing:.01em;">
+            📅 ${entry.date}
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+            <div>
+              <div style="font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--green);margin-bottom:12px;">✅ A) Heute umgesetzt</div>
+              <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+                ${(entry.done||[]).map(item => `
+                  <li style="display:flex;gap:10px;align-items:flex-start;color:var(--text-2);font-size:.875rem;line-height:1.5;">
+                    <span style="color:var(--green);flex-shrink:0;margin-top:3px;">▸</span>
+                    <span>${item}</span>
+                  </li>`).join('')}
+              </ul>
+            </div>
+            <div>
+              <div style="font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--accent-2);margin-bottom:12px;">💡 B) Gelernt / Verbessert</div>
+              <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+                ${(entry.learned||[]).map(item => `
+                  <li style="display:flex;gap:10px;align-items:flex-start;color:var(--text-2);font-size:.875rem;line-height:1.5;">
+                    <span style="color:var(--accent-2);flex-shrink:0;margin-top:3px;">▸</span>
+                    <span>${item}</span>
+                  </li>`).join('')}
+              </ul>
+            </div>
+          </div>
+        </div>`).join('');
+    }
+
     let data = null;
     let activeFilter = 'all';
 
@@ -559,6 +598,9 @@
       });
 
       document.getElementById('list-content').innerHTML = renderListView(tasks, data.projects);
+      if (data.eodLog) {
+        document.getElementById('eodlog-content').innerHTML = renderEodLog(data.eodLog);
+      }
     }
 
     document.querySelectorAll('.tab').forEach(tab => {

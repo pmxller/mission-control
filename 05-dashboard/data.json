@@ -198,6 +198,27 @@
       "notes": "Ablauf: 1) Paul + Turtok erstellen Online-Research-Liste (~500 Unternehmen). 2) Dennis geht Liste manuell durch und filtert die besten Kandidaten. Ziel: Vertriebsliste für Personalfix Recruiting Dashboard."
     }
   ],
+  "eodLog": [
+    {
+      "date": "2026-02-19",
+      "done": [
+        "heypaul.ai Landingpage (12 Sections, HTML/CSS/JS) durch Bisa-Code gebaut",
+        "Cross-Agent Session Visibility aktiviert (tools.sessions.visibility=all)",
+        "Sprint-Retainer Modell (€2.500/2 Wochen) in USER.md + MEMORY.md dokumentiert",
+        "Creme Digital Playbook analysiert + Angebotsstruktur adaptiert",
+        "Dennis Dashboard gelöscht (Neustart geplant mit sauberen Vorgaben)",
+        "EOD Log Feature in Mission Control integriert",
+        "heypaul.ai Landingpage Alex Finn Mission Control Artikel analysiert"
+      ],
+      "learned": [
+        "Cross-Agent sessions_send braucht visibility='all' in config — standardmäßig restricted",
+        "Sprint-Preis: €2.500/2 Wochen — NICHT auf Landingpage, erst im Gespräch nach MVP-Abschluss",
+        "ICP-Signale (richtig): antwortet schnell, versteht ROI, kein Custom Scope, kein 'lass mich drüber nachdenken'",
+        "OpenClaw-Prozess nach Workspace-Umzug manuell neu starten — läuft sonst vom alten Pfad",
+        "Inbox liegt unter '📥 00-OpenClaw Inbox/' im main-workspace (Unicode-Pfad)"
+      ]
+    }
+  ],
   "projects": [
     {
       "name": "Infrastructure",
