@@ -1,0 +1,233 @@
+{
+  "lastUpdated": "2026-02-19T09:05:00+01:00",
+  "agent": {
+    "name": "Turtok",
+    "status": "online",
+    "currentTask": "Dennis-Task angelegt + Dashboard-Filter"
+  },
+  "tasks": [
+    {
+      "id": 1,
+      "title": "E-Mail Setup (Himalaya/Gmail)",
+      "project": "Infrastructure",
+      "status": "done",
+      "priority": "high",
+      "created": "2026-02-15",
+      "completed": "2026-02-16",
+      "notes": "IMAP + SMTP via App-Passwort konfiguriert"
+    },
+    {
+      "id": 2,
+      "title": "Memory-OS v1 aufsetzen",
+      "project": "Infrastructure",
+      "status": "done",
+      "priority": "high",
+      "created": "2026-02-15",
+      "completed": "2026-02-15",
+      "notes": "MEMORY.md, daily logs, DECISIONS.md, project files"
+    },
+    {
+      "id": 3,
+      "title": "Obsidian Vault Grundstruktur",
+      "project": "Infrastructure",
+      "status": "done",
+      "priority": "medium",
+      "created": "2026-02-15",
+      "completed": "2026-02-16",
+      "notes": "Workspace = Vault, Obsidian Sync aktiv"
+    },
+    {
+      "id": 4,
+      "title": "Mission Control Dashboard",
+      "project": "Infrastructure",
+      "status": "done",
+      "priority": "medium",
+      "created": "2026-02-16",
+      "completed": "2026-02-16",
+      "notes": "V2 Kanban + Liquid Glass"
+    },
+    {
+      "id": 5,
+      "title": "Förderanträge (Trust Promotion + Johannes)",
+      "project": "KI-Beratung",
+      "status": "todo",
+      "priority": "critical",
+      "created": "2026-02-15",
+      "completed": null,
+      "notes": "Inkl. BAFA-Beratungsberichte, Deadline Mo/Di"
+    },
+    {
+      "id": 6,
+      "title": "heypaul.ai traffic-ready",
+      "project": "Vibe Builders",
+      "status": "todo",
+      "priority": "high",
+      "created": "2026-02-15",
+      "completed": null,
+      "notes": "Personal Brand Hub, Traffic-Weiche Community vs. Projekt"
+    },
+    {
+      "id": 7,
+      "title": "Skool Community Basic-Version",
+      "project": "Vibe Builders",
+      "status": "backlog",
+      "priority": "high",
+      "created": "2026-02-15",
+      "completed": null,
+      "notes": "9 Module, Phase 1 = 11 Videos"
+    },
+    {
+      "id": 8,
+      "title": "Content-Strategie entwickeln",
+      "project": "Vibe Builders",
+      "status": "backlog",
+      "priority": "medium",
+      "created": "2026-02-16",
+      "completed": null,
+      "notes": "YouTube primary, Repurposing auf IG/TikTok/Spotify"
+    },
+    {
+      "id": 9,
+      "title": "Perspective Funnels ersetzen (St-Max Personal)",
+      "project": "Personalfix",
+      "status": "todo",
+      "priority": "high",
+      "created": "2026-02-16",
+      "completed": null,
+      "notes": "Bewerbungsseiten selbst bauen → 350€/Monat sparen"
+    },
+    {
+      "id": 10,
+      "title": "Meta Business Manager API anbinden",
+      "project": "Personalfix",
+      "status": "backlog",
+      "priority": "medium",
+      "created": "2026-02-16",
+      "completed": null,
+      "notes": "Relaxa Hotel — Ad-Statistiken automatisch ziehen"
+    },
+    {
+      "id": 11,
+      "title": "Sapeur Website — Erster Entwurf",
+      "project": "Sapeur",
+      "status": "todo",
+      "priority": "critical",
+      "created": "2026-02-16",
+      "completed": null,
+      "notes": "Deadline: 24.02.2026. Warte auf Transcript + Dokumente."
+    },
+    {
+      "id": 12,
+      "title": "Eröffnungsbilanz — Unterlagen sammeln & abgeben",
+      "project": "Finanzen",
+      "status": "todo",
+      "priority": "critical",
+      "created": "2026-02-16",
+      "completed": null,
+      "notes": "DEADLINE 26.02.2026! Unterlagen an Steuerberaterin Jahn via DATEV hochladen."
+    },
+    {
+      "id": 13,
+      "title": "Relaxa Social Media Posts planen",
+      "project": "Personalfix",
+      "status": "todo",
+      "priority": "high",
+      "created": "2026-02-17",
+      "completed": null,
+      "notes": "Posting-Plan und Themenliste für Relaxa vorbereiten."
+    },
+    {
+      "id": 14,
+      "title": "Follow-Up Angebot erstellen (nach BAFA 7k€ MVP)",
+      "project": "KI-Beratung",
+      "status": "todo",
+      "priority": "high",
+      "created": "2026-02-17",
+      "completed": null,
+      "notes": "Monatliche Fee-Struktur definieren: Landingpage/Website = niedrigere Fee, WebApp mit Weiterentwicklung/Betrieb = höhere Fee. Klares Pricing-Dokument + Angebotsvorlage erstellen."
+    },
+    {
+      "id": 15,
+      "title": "YOSOY Gutschein-Shop — Stripe Checkout + E-Mail finalisieren",
+      "project": "KI-Beratung",
+      "status": "todo",
+      "priority": "high",
+      "created": "2026-02-17",
+      "completed": null,
+      "notes": "Stripe Authorization vorhanden, API Keys verfügbar. TODO: Checkout-Flow (Gutschein wählen → Stripe Redirect → Zahlung → E-Mail mit Gutschein). Deadline: diese Woche."
+    },
+    {
+      "id": 16,
+      "title": "Social Media Agent aufsetzen (Captions, Thumbnails, Scheduling)",
+      "project": "Vibe Builders",
+      "status": "backlog",
+      "priority": "high",
+      "created": "2026-02-17",
+      "completed": null,
+      "notes": "Eigener Agent für: Captions/Beschreibungen generieren, Thumbnails erstellen, Multi-Platform Scheduling. Paul produziert Videos, Agent übernimmt Nachbearbeitung + Posting."
+    },
+    {
+      "id": 17,
+      "title": "Recruiting-Paket SaaS bauen (Bewerbungsseiten + Kunden-Login)",
+      "project": "KI-Beratung",
+      "status": "backlog",
+      "priority": "high",
+      "created": "2026-02-17",
+      "completed": null,
+      "notes": "Bestehende Perspective-Funnelseiten als Vorlage nachbauen + Kunden-Login (Bewerber verwalten, Jobs managen). Ziel: schnell skalierbar, ein System für viele Kunden. Target: März 2026."
+    },
+    {
+      "id": 18,
+      "title": "Podcast mit Christoph bearbeiten & hochladen",
+      "project": "Vibe Builders",
+      "status": "todo",
+      "priority": "critical",
+      "created": "2026-02-18",
+      "completed": null,
+      "notes": "KRITISCH. Geplant: 2026-02-19 15:00. Schritte: Schnitt/Export → Upload (YouTube/Spotify?) → Beschreibung/Title/Thumbnail → Veröffentlichung prüfen."
+    },
+    {
+      "id": 19,
+      "title": "Research: Promotion-Agenturen & Zeitarbeitsfirmen für Recruiting Dashboard",
+      "project": "Personalfix",
+      "status": "todo",
+      "priority": "high",
+      "assignee": "Dennis",
+      "created": "2026-02-19",
+      "completed": null,
+      "notes": "Ablauf: 1) Paul + Turtok erstellen Online-Research-Liste (~500 Unternehmen). 2) Dennis geht Liste manuell durch und filtert die besten Kandidaten. Ziel: Vertriebsliste für Personalfix Recruiting Dashboard."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Infrastructure",
+      "emoji": "⚙️",
+      "color": "#6366f1"
+    },
+    {
+      "name": "KI-Beratung",
+      "emoji": "🤖",
+      "color": "#f59e0b"
+    },
+    {
+      "name": "Vibe Builders",
+      "emoji": "🚀",
+      "color": "#10b981"
+    },
+    {
+      "name": "Personalfix",
+      "emoji": "👔",
+      "color": "#ef4444"
+    },
+    {
+      "name": "Sapeur",
+      "emoji": "🎯",
+      "color": "#8b5cf6"
+    },
+    {
+      "name": "Finanzen",
+      "emoji": "💰",
+      "color": "#dc2626"
+    }
+  ]
+}
