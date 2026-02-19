@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-02-18T13:25:06+01:00",
+  "lastUpdated": "2026-02-19T09:05:00+01:00",
   "agent": {
     "name": "Turtok",
     "status": "online",
-    "currentTask": "Sapeur-Projekt angelegt"
+    "currentTask": "Dennis-Task angelegt + Dashboard-Filter"
   },
   "tasks": [
     {
@@ -185,6 +185,17 @@
       "created": "2026-02-18",
       "completed": null,
       "notes": "KRITISCH. Geplant: 2026-02-19 15:00. Schritte: Schnitt/Export → Upload (YouTube/Spotify?) → Beschreibung/Title/Thumbnail → Veröffentlichung prüfen."
+    },
+    {
+      "id": 19,
+      "title": "Research: Promotion-Agenturen & Zeitarbeitsfirmen für Recruiting Dashboard",
+      "project": "Personalfix",
+      "status": "todo",
+      "priority": "high",
+      "assignee": "Dennis",
+      "created": "2026-02-19",
+      "completed": null,
+      "notes": "Ablauf: 1) Paul + Turtok erstellen Online-Research-Liste (~500 Unternehmen). 2) Dennis geht Liste manuell durch und filtert die besten Kandidaten. Ziel: Vertriebsliste für Personalfix Recruiting Dashboard."
     }
   ],
   "projects": [

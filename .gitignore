@@ -1,0 +1,15 @@
+# Private - never push
+MEMORY.md
+USER.md
+SOUL.md
+TOOLS.md
+memory/
+.learnings/
+00-Inbox/
+05-Memory/
+paul/
+backups/
+tmp/
+ops/
+node_modules/
+.DS_Store

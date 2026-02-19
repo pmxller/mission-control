@@ -385,6 +385,9 @@
     <div class="tabs">
       <div class="tab active" data-view="kanban">Kanban</div>
       <div class="tab" data-view="list">Liste</div>
+      <div style="flex:1"></div>
+      <div class="tab filter-tab" data-filter="all" style="font-size:.75rem;padding:6px 14px;">Alle</div>
+      <div class="tab filter-tab" data-filter="Dennis" style="font-size:.75rem;padding:6px 14px;">👤 Dennis</div>
     </div>
 
     <div class="view active" id="view-kanban">
@@ -458,6 +461,7 @@
             <span class="k-tag tag-${t.priority}">${pLabels[t.priority]}</span>
             <span class="k-project">${emoji} ${t.project}</span>
           </div>
+          ${t.assignee ? `<span class="k-tag" style="background:rgba(99,102,241,.25);color:#a5b4fc;">👤 ${t.assignee}</span>` : ''}
           ${t.notes ? `<div class="k-notes">${t.notes}</div>` : ''}
           ${t.completed ? `<div class="k-date">✓ ${t.completed}</div>` : ''}
         </div>`;
@@ -500,6 +504,16 @@
     }
 
     let data = null;
+    let activeFilter = 'all';
+
+    document.querySelectorAll('.filter-tab').forEach(ft => {
+      ft.addEventListener('click', () => {
+        document.querySelectorAll('.filter-tab').forEach(f => f.classList.remove('active'));
+        ft.classList.add('active');
+        activeFilter = ft.dataset.filter;
+        render();
+      });
+    });
 
     async function loadData() {
       try {
@@ -515,7 +529,7 @@
       if (!data) return;
       document.getElementById('cur-task').textContent = data.agent.currentTask;
 
-      const tasks = data.tasks;
+      const tasks = activeFilter === 'all' ? data.tasks : data.tasks.filter(t => t.assignee === activeFilter);
       const byStatus = {};
       columns.forEach(c => byStatus[c] = []);
       tasks.forEach(t => {
