@@ -1,0 +1,125 @@
+<%- include('partials/header', { title: 'Dennis', user }) %>
+
+<section class="grid two">
+  <article class="card">
+    <div class="card-head">
+      <h2>Meine Aufgaben</h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Titel</th>
+            <th>Prio</th>
+            <th>Deadline</th>
+            <th>Status</th>
+            <th>Stunden</th>
+            <th>Aktion</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% if (!tasks.length) { %>
+            <tr><td colspan="6" class="muted">Keine Aufgaben vorhanden.</td></tr>
+          <% } %>
+          <% tasks.forEach(task => { %>
+          <tr>
+            <td>
+              <strong><%= task.title %></strong>
+              <div class="muted small"><%= task.description || '-' %></div>
+            </td>
+            <td><span class="pill <%= task.priority %>"><%= task.priority %></span></td>
+            <td><%= formatDate(task.deadline) %></td>
+            <td><span class="pill status <%= task.status %>"><%= task.status %></span></td>
+            <td><%= formatHours(task.hours_spent) %>h</td>
+            <td>
+              <% if (task.status !== 'done') { %>
+                <form action="/worker/tasks/<%= task.id %>/complete" method="POST" class="inline-form">
+                  <input type="number" name="hours_spent" min="0" step="0.25" placeholder="h" required />
+                  <button class="btn primary" type="submit">Erledigt</button>
+                </form>
+              <% } else { %>
+                <span class="muted">✅</span>
+              <% } %>
+            </td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  </article>
+
+  <article class="card">
+    <h2>Verfügbarkeit eintragen</h2>
+    <form action="/worker/availability" method="POST" class="stack">
+      <label>Datum
+        <input type="date" name="date" required />
+      </label>
+      <label>Verfügbare Stunden
+        <input type="number" min="0" max="24" step="0.25" name="hours" required />
+      </label>
+      <label>Zeitslot (optional)
+        <input type="text" name="time_slot" placeholder="10:00-14:00" />
+      </label>
+      <label>Notiz
+        <input type="text" name="note" placeholder="Optional" />
+      </label>
+      <button class="btn primary" type="submit">Speichern</button>
+    </form>
+
+    <h3>Einträge in <%= month %></h3>
+    <ul class="simple-list">
+      <% if (!availability.length) { %>
+        <li class="muted">Keine Verfügbarkeit eingetragen.</li>
+      <% } %>
+      <% availability.forEach(row => { %>
+      <li>
+        <strong><%= formatDate(row.date) %></strong>
+        — <%= formatHours(row.hours) %>h
+        <% if (row.time_slot) { %>(<%= row.time_slot %>)<% } %>
+        <% if (row.note) { %>· <span class="muted"><%= row.note %></span><% } %>
+      </li>
+      <% }) %>
+    </ul>
+  </article>
+</section>
+
+<section class="card">
+  <div class="card-head">
+    <h2>Mein Monat (<%= month %>)</h2>
+    <form method="GET" action="/worker">
+      <input type="month" name="month" value="<%= month %>" />
+      <button class="btn">Wechseln</button>
+    </form>
+  </div>
+
+  <div class="kpi-row">
+    <div class="kpi"><span>Gearbeitet</span><strong><%= formatHours(workedHours) %>h</strong></div>
+    <div class="kpi"><span>Verfügbar</span><strong><%= formatHours(availableHours) %>h</strong></div>
+    <div class="kpi"><span>Übrig (max 20h)</span><strong><%= formatHours(remainingHours) %>h</strong></div>
+  </div>
+
+  <div class="progress">
+    <div style="width: <%= Math.min((workedHours / maxHours) * 100, 100) %>%"></div>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Aufgabe</th><th>Stunden</th><th>Status</th><th>Erledigt am</th></tr></thead>
+      <tbody>
+      <% if (!reportRows.length) { %>
+        <tr><td colspan="4" class="muted">Keine erledigten Aufgaben in diesem Monat.</td></tr>
+      <% } %>
+      <% reportRows.forEach(row => { %>
+        <tr>
+          <td><%= row.title %></td>
+          <td><%= formatHours(row.hours_spent) %>h</td>
+          <td><%= row.status %></td>
+          <td><%= formatDate(row.completed_at) %></td>
+        </tr>
+      <% }) %>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<%- include('partials/footer') %>
