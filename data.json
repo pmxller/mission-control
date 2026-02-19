@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-19T09:05:00+01:00",
+  "lastUpdated": "2026-02-20T00:35:25.979596+01:00",
   "agent": {
     "name": "Turtok",
     "status": "online",
@@ -196,6 +196,16 @@
       "created": "2026-02-19",
       "completed": null,
       "notes": "Ablauf: 1) Paul + Turtok erstellen Online-Research-Liste (~500 Unternehmen). 2) Dennis geht Liste manuell durch und filtert die besten Kandidaten. Ziel: Vertriebsliste für Personalfix Recruiting Dashboard."
+    },
+    {
+      "id": 20,
+      "title": "E-Mail-Zugriff für Turtok einrichten (Inbox-Triage: wichtig vs. Newsletter/Spam)",
+      "project": "Infrastructure",
+      "status": "todo",
+      "priority": "high",
+      "created": "2026-02-20",
+      "completed": null,
+      "notes": "Morgen gemeinsam einrichten: Gmail/IMAP Zugriff (OAuth oder App-Passwort), dann Regeln: Wichtigkeitsfilter, Newsletter/Promo/Spam-Kategorien, tägliche Übersicht."
     }
   ],
   "eodLog": [
