@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-20T00:35:25.979596+01:00",
+  "lastUpdated": "2026-02-20T01:09:36.178267+01:00",
   "agent": {
     "name": "Turtok",
     "status": "online",
@@ -206,6 +206,26 @@
       "created": "2026-02-20",
       "completed": null,
       "notes": "Morgen gemeinsam einrichten: Gmail/IMAP Zugriff (OAuth oder App-Passwort), dann Regeln: Wichtigkeitsfilter, Newsletter/Promo/Spam-Kategorien, tägliche Übersicht."
+    },
+    {
+      "id": 21,
+      "title": "Dennis briefen: Akquise-Research Liste abarbeiten (Start nächste Woche)",
+      "project": "Personalfix",
+      "status": "todo",
+      "priority": "high",
+      "created": "2026-02-20",
+      "completed": null,
+      "notes": "Morgen Briefing schreiben + Dennis klar beauftragen: nächste Woche Start, Liste der Agenturen/Zeitarbeit durchgehen, Top-Kandidaten filtern, Output-Format + Zeitplan festlegen. Basis: vorhandene Research-Liste/Auswahl."
+    },
+    {
+      "id": 22,
+      "title": "Dennis Dashboard: To-do-Liste finalisieren + Aufgaben überführen",
+      "project": "Personalfix",
+      "status": "todo",
+      "priority": "high",
+      "created": "2026-02-20",
+      "completed": null,
+      "notes": "Morgen die To-do-Liste für Dennis fertig machen und Aufgaben ins Dashboard/Control Center überführen (damit Dennis nächste Woche direkt loslegen kann)."
     }
   ],
   "eodLog": [
