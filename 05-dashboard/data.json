@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-20T01:09:36.178267+01:00",
+  "lastUpdated": "2026-02-20T01:51:44.351444+01:00",
   "agent": {
     "name": "Turtok",
     "status": "online",
@@ -226,6 +226,16 @@
       "created": "2026-02-20",
       "completed": null,
       "notes": "Morgen die To-do-Liste für Dennis fertig machen und Aufgaben ins Dashboard/Control Center überführen (damit Dennis nächste Woche direkt loslegen kann)."
+    },
+    {
+      "id": 23,
+      "title": "Rechnung an Christina schreiben (1. BAFA-Rechnung)",
+      "project": "Finanzen",
+      "status": "todo",
+      "priority": "critical",
+      "created": "2026-02-20",
+      "completed": null,
+      "notes": "Morgen früh (Start 9:00–9:30): erste BAFA-Rechnung für Christina erstellen und versenden/ablegen."
     }
   ],
   "eodLog": [
