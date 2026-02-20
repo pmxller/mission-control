@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-02-20T01:51:44.351444+01:00",
+  "lastUpdated": "2026-02-20T22:00:00.000000+01:00",
   "agent": {
     "name": "Turtok",
     "status": "online",
-    "currentTask": "Dennis-Task angelegt + Dashboard-Filter"
+    "currentTask": "Tages-Review & EOD Update"
   },
   "tasks": [
     {
@@ -50,10 +50,10 @@
       "id": 5,
       "title": "Förderanträge (Trust Promotion + Johannes)",
       "project": "KI-Beratung",
-      "status": "todo",
+      "status": "done",
       "priority": "critical",
       "created": "2026-02-15",
-      "completed": null,
+      "completed": "2026-02-20",
       "notes": "Inkl. BAFA-Beratungsberichte, Deadline Mo/Di"
     },
     {
@@ -231,14 +231,32 @@
       "id": 23,
       "title": "Rechnung an Kristina schreiben (1. BAFA-Rechnung)",
       "project": "Finanzen",
-      "status": "todo",
+      "status": "done",
       "priority": "critical",
       "created": "2026-02-20",
-      "completed": null,
-      "notes": "Morgen früh (Start 9:00–9:30): erste BAFA-Rechnung für Kristina erstellen und versenden/ablegen."
+      "completed": "2026-02-20",
+      "notes": "Versandt. 1. BAFA-Rechnung an Kristina raus."
     }
   ],
   "eodLog": [
+    {
+      "date": "2026-02-20",
+      "done": [
+        "Rechnung an Kristina (1. BAFA-Rechnung) versandt",
+        "Förderanträge Trust Promotion + Johannes erledigt",
+        "Model-Config aktualisiert: Turtok + BAFA auf claude-sonnet-4-6",
+        "memory-hybrid Plugin update-sicher reinstalliert (~/.openclaw/extensions/, autoRecall=false)",
+        "Gateway-Crash durch OpenAI 429 diagnostiziert und behoben",
+        "Turtok Bot Token (Telegram 401) repariert",
+        "Bisa USER.md geprüft (fehlt noch — für nächste Woche notiert)"
+      ],
+      "learned": [
+        "memory-hybrid Plugin darf nicht in /opt/homebrew/... liegen — wird bei Updates gelöscht",
+        "autoRecall=true + OpenAI 429 = Gateway-Crash. Immer autoRecall=false wenn Quota begrenzt",
+        "openclaw pairing list braucht Channel-Argument: 'openclaw pairing list telegram'",
+        "Eröffnungsbilanz delegiert an Dennis für nächste Woche"
+      ]
+    },
     {
       "date": "2026-02-19",
       "done": [
