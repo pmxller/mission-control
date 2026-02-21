@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-20T22:00:00.000000+01:00",
+  "lastUpdated": "2026-02-21T13:00:00.000000+01:00",
   "agent": {
     "name": "Turtok",
     "status": "online",
@@ -236,6 +236,26 @@
       "created": "2026-02-20",
       "completed": "2026-02-20",
       "notes": "Versandt. 1. BAFA-Rechnung an Kristina raus."
+    },
+    {
+      "id": 24,
+      "title": "REDO Partnership 1-Pager mit Lovable bauen",
+      "project": "KI-Beratung",
+      "status": "todo",
+      "priority": "critical",
+      "created": "2026-02-21",
+      "notes": "Content MD bereits vorbereitet: 02-projekte/rene-dost-redo/1pager-content.md. Montag 23.02. mit Lovable als Link-Seite bauen. Ziel: an René Dost schicken vor/nach Meeting.",
+      "deadline": "2026-02-23"
+    },
+    {
+      "id": 25,
+      "title": "Meeting vorbereiten: René Dost (REDO Gruppe)",
+      "project": "KI-Beratung",
+      "status": "todo",
+      "priority": "critical",
+      "created": "2026-02-21",
+      "notes": "Research done (02-projekte/rene-dost-redo/REDO-OPPORTUNITY.md). Pitch: Speisekarte-Demo + WhatsApp Lead + HeyGen Avatar. Ziel: Share Deal (% Mehrumsatz). Kein Upfront.",
+      "deadline": "2026-02-23"
     }
   ],
   "eodLog": [
